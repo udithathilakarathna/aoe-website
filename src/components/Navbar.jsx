@@ -23,12 +23,15 @@ const navItems = [
 const Navbar = () => {
   return (
     <>
-      {/* Header */}
+      {/* HEADER */}
       <Box
         sx={{
           backgroundColor: "#fff",
           borderBottom: "1px solid #f2f2f2",
-          py: 2,
+          py: {
+            xs: 1,
+            md: 2,
+          },
         }}
       >
         <Container maxWidth="xl">
@@ -37,31 +40,45 @@ const Navbar = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              minHeight: "90px",
+
+              minHeight: {
+                xs: "70px",
+                md: "px",
+              },
             }}
           >
-            {/* Left Logo */}
+            {/* LEFT LOGO */}
             <Box
               component="img"
               src={leftLogo}
               alt="logo"
               sx={{
-                height: 62,
+                height: {
+                  xs: 45,
+                  md: 62,
+                },
+
                 width: "auto",
                 objectFit: "contain",
               }}
             />
 
-            {/* Center Text */}
+            {/* CENTER TEXT */}
             <Box
               sx={{
                 textAlign: "center",
-                mt: 0.3,
+                flex: 1,
+                px: 1,
               }}
             >
               <Typography
                 sx={{
-                  fontSize: "29px",
+                  fontSize: {
+                    xs: "18px",
+                    sm: "22px",
+                    md: "29px",
+                  },
+
                   fontWeight: 800,
                   fontFamily: "Georgia, serif",
                   color: "#1d2530",
@@ -73,7 +90,11 @@ const Navbar = () => {
 
               <Typography
                 sx={{
-                  fontSize: "16px",
+                  fontSize: {
+                    xs: "12px",
+                    md: "16px",
+                  },
+
                   color: "#666",
                   fontFamily: "Georgia, serif",
                   mt: 0.4,
@@ -83,13 +104,17 @@ const Navbar = () => {
               </Typography>
             </Box>
 
-            {/* Right Logo */}
+            {/* RIGHT LOGO */}
             <Box
               component="img"
               src={rightLogo}
               alt="logo"
               sx={{
-                height: 62,
+                height: {
+                  xs: 45,
+                  md: 62,
+                },
+
                 width: "auto",
                 objectFit: "contain",
               }}
@@ -98,21 +123,37 @@ const Navbar = () => {
         </Container>
       </Box>
 
-      {/* Green Navbar */}
+      {/* GREEN NAVBAR */}
       <AppBar
         position="static"
         elevation={0}
         sx={{
           backgroundColor: "#39d66d",
-          height: "38px",
-          justifyContent: "center",
+          py: {
+            xs: 0.5,
+            md: 0,
+          },
         }}
       >
         <Container maxWidth="xl">
           <Toolbar
             sx={{
-              minHeight: "38px !important",
-              justifyContent: "flex-end",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+
+              flexWrap: "wrap",
+
+              gap: {
+                xs: 0.5,
+                md: 1,
+              },
+
+              minHeight: {
+                xs: "auto",
+                md: "38px",
+              },
+
               px: 0,
             }}
           >
@@ -122,13 +163,25 @@ const Navbar = () => {
                 sx={{
                   color: "#1b1b1b",
                   textTransform: "none",
-                  fontSize: "14px",
+
+                  fontSize: {
+                    xs: "13px",
+                    md: "14px",
+                  },
+
                   fontWeight: "bold",
-                  px: 1.5,
+
+                  px: {
+                    xs: 0.8,
+                    md: 1.5,
+                  },
+
+                  py: 0.3,
                   minWidth: "auto",
 
                   "&:hover": {
-                    backgroundColor: "rgba(255,255,255,0.2)",
+                    backgroundColor:
+                      "rgba(255,255,255,0.2)",
                   },
                 }}
               >

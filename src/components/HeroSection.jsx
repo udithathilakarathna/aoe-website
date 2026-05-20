@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  Container,
+} from "@mui/material";
 
 import hero1 from "../assets/foe.jpg";
 import hero2 from "../assets/hero_image_1.jpg";
@@ -8,15 +13,21 @@ import hero3 from "../assets/hero_image_2.jpg";
 const images = [hero1, hero2, hero3];
 
 const HeroSection = () => {
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentImage, setCurrentImage] =
+    useState(0);
 
   // Auto image change
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 4000); // 4 sec
+      setCurrentImage((prev) =>
+        prev === images.length - 1
+          ? 0
+          : prev + 1
+      );
+    }, 4000);
 
-    return () => clearInterval(interval);
+    return () =>
+      clearInterval(interval);
   }, []);
 
   return (
@@ -24,10 +35,13 @@ const HeroSection = () => {
       sx={{
         position: "relative",
         width: "100%",
+
         height: {
-          xs: "420px",
+          xs: "650px",
+          sm: "700px",
           md: "550px",
         },
+
         overflow: "hidden",
       }}
     >
@@ -41,9 +55,18 @@ const HeroSection = () => {
             backgroundImage: `url(${img})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-            transition: "opacity 1.5s ease-in-out",
-            opacity: currentImage === index ? 1 : 0,
-            transform: currentImage === index ? "scale(1)" : "scale(1.05)",
+            transition:
+              "opacity 1.5s ease-in-out",
+
+            opacity:
+              currentImage === index
+                ? 1
+                : 0,
+
+            transform:
+              currentImage === index
+                ? "scale(1)"
+                : "scale(1.05)",
           }}
         />
       ))}
@@ -53,8 +76,10 @@ const HeroSection = () => {
         sx={{
           position: "absolute",
           inset: 0,
+
           background:
             "linear-gradient(to right, rgba(0,0,0,0.60), rgba(0,0,0,0.15))",
+
           zIndex: 1,
         }}
       />
@@ -73,7 +98,16 @@ const HeroSection = () => {
         <Box
           sx={{
             maxWidth: "650px",
-            ml: { xs: 1, md: 4 },
+
+            ml: {
+              xs: 1,
+              md: 4,
+            },
+
+            mt: {
+              xs: 4,
+              md: 0,
+            },
           }}
         >
           {/* Heading */}
@@ -82,10 +116,13 @@ const HeroSection = () => {
               color: "#fff",
               fontWeight: 800,
               lineHeight: 1.1,
+
               fontSize: {
-                xs: "42px",
+                xs: "26px",
+                sm: "34px",
                 md: "65px",
               },
+
               mb: 2,
             }}
           >
@@ -98,56 +135,119 @@ const HeroSection = () => {
           <Typography
             sx={{
               color: "#f3f3f3",
+
               fontSize: {
-                xs: "15px",
+                xs: "14px",
                 md: "18px",
               },
+
               lineHeight: 1.8,
+
               mb: 4,
-              maxWidth: "550px",
+
+              maxWidth: {
+                xs: "95%",
+                md: "550px",
+              },
             }}
           >
-            The Engineering Students’ Association represents the students of the
-            Faculty of Engineering at NSBM Green University, fostering academic,
-            technical, and social excellence while promoting leadership,
+            The Engineering Students’
+            Association represents the
+            students of the Faculty of
+            Engineering at NSBM Green
+            University, fostering
+            academic, technical, and
+            social excellence while
+            promoting leadership,
             teamwork, and innovation.
           </Typography>
 
           {/* Buttons */}
-          <Box sx={{ display: "flex", gap: 2 }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2,
+
+              flexDirection: {
+                xs: "column",
+                sm: "row",
+              },
+
+              alignItems: {
+                xs: "stretch",
+                sm: "flex-start",
+              },
+            }}
+          >
+            {/* Explore Button */}
             <Button
               variant="contained"
               sx={{
-                backgroundColor: "#fff",
+                backgroundColor:
+                  "#fff",
+
                 color: "#111",
-                textTransform: "none",
-                px: 4,
+
+                textTransform:
+                  "none",
+
+                px: {
+                  xs: 2,
+                  md: 4,
+                },
+
                 py: 1.5,
+
+                fontSize: {
+                  xs: "14px",
+                  md: "16px",
+                },
+
                 fontWeight: 700,
                 borderRadius: "8px",
 
                 "&:hover": {
-                  backgroundColor: "#ececec",
+                  backgroundColor:
+                    "#ececec",
                 },
               }}
             >
               Explore Programs
             </Button>
 
+            {/* Contact Button */}
             <Button
               variant="outlined"
               sx={{
-                borderColor: "#fff",
+                borderColor:
+                  "#fff",
+
                 color: "#fff",
-                textTransform: "none",
-                px: 4,
+
+                textTransform:
+                  "none",
+
+                px: {
+                  xs: 2,
+                  md: 4,
+                },
+
                 py: 1.5,
+
+                fontSize: {
+                  xs: "14px",
+                  md: "16px",
+                },
+
                 fontWeight: 700,
                 borderRadius: "8px",
 
                 "&:hover": {
-                  borderColor: "#fff",
-                  backgroundColor: "rgba(255,255,255,0.1)",
+                  borderColor:
+                    "#fff",
+
+                  backgroundColor:
+                    "rgba(255,255,255,0.1)",
                 },
               }}
             >
@@ -161,24 +261,46 @@ const HeroSection = () => {
       <Box
         sx={{
           position: "absolute",
-          bottom: 25,
+
+          bottom: {
+            xs: 18,
+            md: 25,
+          },
+
           left: "50%",
-          transform: "translateX(-50%)",
+
+          transform:
+            "translateX(-50%)",
+
           display: "flex",
           gap: 1,
+
           zIndex: 2,
         }}
       >
         {images.map((_, index) => (
           <Box
             key={index}
-            onClick={() => setCurrentImage(index)}
+            onClick={() =>
+              setCurrentImage(index)
+            }
             sx={{
-              width: currentImage === index ? 26 : 10,
-              height: 10,
+              width:
+                currentImage === index
+                  ? 22
+                  : 9,
+
+              height: 9,
+
               borderRadius: "20px",
-              backgroundColor: currentImage === index ? "#38D66B" : "#fff",
+
+              backgroundColor:
+                currentImage === index
+                  ? "#38D66B"
+                  : "#fff",
+
               transition: "0.4s",
+
               cursor: "pointer",
             }}
           />
