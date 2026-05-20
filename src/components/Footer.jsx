@@ -1,9 +1,11 @@
 import React from "react";
 import { Box, Typography, IconButton } from "@mui/material";
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+} from "@mui/icons-material";
 
-import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
-
-// logos
 import aoeLogo from "../assets/aoe_logo.png";
 import nsbmLogo from "../assets/nsbm_logo.png";
 
@@ -17,26 +19,31 @@ const Footer = () => {
         mt: 4,
       }}
     >
-      {/* MAIN FOOTER */}
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
-          width: "100%",
-          minHeight: {
-            xs: 140,
-            md: 180,
+          flexDirection: {
+            xs: "column",
+            md: "row",
           },
+          width: "100%",
+          overflow: "hidden",
         }}
       >
-        {/* LEFT WHITE SECTION */}
+        {/* WHITE SECTION */}
         <Box
           sx={{
             position: "relative",
             backgroundColor: "#fff",
+
             width: {
-              xs: "38%",
-              md: "28%",
+              xs: "100%",
+              md: "36%", // increased for title space
+            },
+
+            minHeight: {
+              xs: 120, // smaller mobile footer
+              md: 220,
             },
 
             display: "flex",
@@ -44,201 +51,247 @@ const Footer = () => {
             justifyContent: "center",
 
             px: {
+              xs: 2,
+              md: 4,
+            },
+
+            py: {
               xs: 1.5,
               md: 3,
             },
 
-            py: 2,
+            zIndex: 2,
 
             "&::after": {
               content: '""',
               position: "absolute",
-              top: 0,
+
+              // MOBILE
+              bottom: -20,
+              left: 0,
+
+              width: "100%",
+              height: {
+                xs: 20,
+                md: "100%",
+              },
+
+              backgroundColor: "#fff",
+
+              clipPath: {
+                xs: "polygon(0 0, 100% 0, 100% 100%)",
+                md: "none",
+              },
+
+              // DESKTOP
+              top: {
+                md: 0,
+              },
+
+              bottom: {
+                md: "auto",
+              },
+
+              left: {
+                md: "auto",
+              },
+
               right: {
-                xs: -25,
-                md: -50,
+                md: -40,
               },
 
               width: {
-                xs: 50,
-                md: 100,
+                md: 80,
               },
 
-              height: "100%",
-              backgroundColor: "#fff",
-              transform: "skewX(-20deg)",
+              transform: {
+                md: "skewX(-20deg)",
+              },
+
+              zIndex: 1,
             },
           }}
         >
-          {/* logos */}
+          {/* LOGOS */}
           <Box
             sx={{
               display: "flex",
               alignItems: "center",
-              gap: {
-                xs: 0.5,
-                md: 1.5,
-              },
+              gap: 1,
               mb: {
                 xs: 1,
                 md: 2,
               },
-              zIndex: 2,
             }}
           >
             <Box
               component="img"
               src={aoeLogo}
-              alt="aoe"
+              alt="AOE Logo"
               sx={{
                 height: {
-                  xs: 38,
+                  xs: 28,
                   md: 60,
                 },
+                width: "auto",
               }}
             />
 
             <Box
               component="img"
               src={nsbmLogo}
-              alt="nsbm"
+              alt="NSBM Logo"
               sx={{
                 height: {
-                  xs: 18,
+                  xs: 12,
                   md: 35,
                 },
+                width: "auto",
               }}
             />
           </Box>
 
-          {/* title */}
+          {/* TITLE */}
           <Typography
             sx={{
               fontWeight: 700,
-              color: "#222",
-              lineHeight: 1.15,
+              color: "#111",
+              lineHeight: 1.2,
+              mb: 1,
 
               fontSize: {
-                xs: "12px",
-                sm: "14px",
-                md: "20px",
+                xs: "14px",
+                md: "24px",
               },
 
-              mb: 1,
-              zIndex: 2,
+              wordBreak: "break-word",
             }}
           >
             Association of Engineering
           </Typography>
 
-          {/* description */}
+          {/* DESCRIPTION */}
           <Typography
             sx={{
               color: "#666",
-              lineHeight: 1.7,
-              zIndex: 2,
+              lineHeight: 1.6,
 
               fontSize: {
-                xs: "8px",
-                md: "12px",
+                xs: "10px",
+                md: "13px",
               },
 
               maxWidth: {
-                xs: "130px",
-                md: "240px",
+                xs: "100%",
+                md: "260px",
               },
             }}
           >
-            Our vision is to provide convenience and help increase your sales
-            business.
+            Our vision is to provide convenience and
+            help increase your sales business.
           </Typography>
         </Box>
 
-        {/* RIGHT BLUE SECTION */}
+        {/* BLUE SECTION */}
         <Box
           sx={{
             width: {
-              xs: "70%",
-              md: "68%",
+              xs: "100%",
+              md: "64%",
             },
 
             backgroundColor: "#06164A",
 
+            px: {
+              xs: 2,
+              md: 6,
+            },
+
+            py: {
+              xs: 2,
+              md: 0,
+            },
+
             display: "flex",
             alignItems: "center",
-            justifyContent: "flex-end",
-
-            px: {
-              xs: 1,
-              md: 5,
-            },
           }}
         >
           <Box
             sx={{
-              display: "flex",
-              alignItems: "flex-start",
-
-              // move everything right
-              justifyContent: "flex-end",
-
               width: "100%",
 
-              ml: "auto",
+              display: "flex",
+
+              flexDirection: {
+                xs: "row",
+                md: "row",
+              },
+
+              justifyContent: "space-between",
+
+              alignItems: "flex-start",
 
               gap: {
-                xs: 4,
+                xs: 2,
+                md: 8,
+              },
+
+              pl: {
+                xs: 0,
                 md: 10,
               },
             }}
           >
-            {/* Explore */}
+            {/* EXPLORE */}
             <Box>
               <Typography
                 sx={{
                   color: "#fff",
                   fontWeight: 700,
-                  mb: 1.2,
+                  mb: 1,
 
                   fontSize: {
-                    xs: "8px",
-                    md: "13px",
+                    xs: "9px",
+                    md: "14px",
                   },
                 }}
               >
                 EXPLORE
               </Typography>
 
-              {["About Us", "News", "Industry"].map((item) => (
-                <Typography
-                  key={item}
-                  sx={{
-                    color: "#d7d7d7",
-                    mb: 0.8,
-                    cursor: "pointer",
+              {["About Us", "News", "Industry"].map(
+                (item) => (
+                  <Typography
+                    key={item}
+                    sx={{
+                      color: "#d7d7d7",
+                      mb: 0.5,
 
-                    fontSize: {
-                      xs: "7px",
-                      md: "12px",
-                    },
-                  }}
-                >
-                  {item}
-                </Typography>
-              ))}
+                      fontSize: {
+                        xs: "8px",
+                        md: "13px",
+                      },
+
+                      cursor: "pointer",
+                    }}
+                  >
+                    {item}
+                  </Typography>
+                )
+              )}
             </Box>
 
-            {/* Other Directories */}
+            {/* DIRECTORIES */}
             <Box>
               <Typography
                 sx={{
                   color: "#fff",
                   fontWeight: 700,
-                  mb: 1.2,
+                  mb: 1,
 
                   fontSize: {
-                    xs: "8px",
-                    md: "13px",
+                    xs: "9px",
+                    md: "14px",
                   },
                 }}
               >
@@ -254,13 +307,14 @@ const Footer = () => {
                   key={item}
                   sx={{
                     color: "#d7d7d7",
-                    mb: 0.8,
-                    cursor: "pointer",
+                    mb: 0.5,
 
                     fontSize: {
-                      xs: "7px",
-                      md: "12px",
+                      xs: "8px",
+                      md: "13px",
                     },
+
+                    cursor: "pointer",
                   }}
                 >
                   {item}
@@ -268,17 +322,17 @@ const Footer = () => {
               ))}
             </Box>
 
-            {/* Social */}
+            {/* SOCIAL */}
             <Box>
               <Typography
                 sx={{
                   color: "#fff",
                   fontWeight: 700,
-                  mb: 1.2,
+                  mb: 1,
 
                   fontSize: {
-                    xs: "8px",
-                    md: "13px",
+                    xs: "9px",
+                    md: "14px",
                   },
                 }}
               >
@@ -294,34 +348,37 @@ const Footer = () => {
                   },
                 }}
               >
-                {[Instagram, Facebook, LinkedIn].map((Icon, index) => (
-                  <IconButton
-                    key={index}
-                    sx={{
-                      color: "#fff",
-                      border: "1px solid rgba(255,255,255,0.2)",
-
-                      width: {
-                        xs: 24,
-                        md: 42,
-                      },
-
-                      height: {
-                        xs: 24,
-                        md: 42,
-                      },
-                    }}
-                  >
-                    <Icon
+                {[Instagram, Facebook, LinkedIn].map(
+                  (Icon, index) => (
+                    <IconButton
+                      key={index}
                       sx={{
-                        fontSize: {
-                          xs: 14,
-                          md: 20,
+                        color: "#fff",
+                        border:
+                          "1px solid rgba(255,255,255,0.2)",
+
+                        width: {
+                          xs: 28,
+                          md: 44,
+                        },
+
+                        height: {
+                          xs: 28,
+                          md: 44,
                         },
                       }}
-                    />
-                  </IconButton>
-                ))}
+                    >
+                      <Icon
+                        sx={{
+                          fontSize: {
+                            xs: 14,
+                            md: 20,
+                          },
+                        }}
+                      />
+                    </IconButton>
+                  )
+                )}
               </Box>
             </Box>
           </Box>
