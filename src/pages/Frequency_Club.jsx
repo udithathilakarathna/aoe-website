@@ -5,12 +5,13 @@ import Footer from "../components/Footer";
 
 
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
-import Clublogo from "../assets/REClubLogo.jpeg";
-import RE_Commitee from "../assets/RE_Club_Society_commitee 2026.jpg";
-import Badge_Ceremony from "../assets/Badge_ceremony_RE.jpg";
-import WAGSARA from "../assets/WAGSARA.png";
-import MICphoto from "../assets/prabath.webp";
-import REClub_President from "../assets/REClub_President.png";
+import Clublogo from "../assets/BandLogo.PNG";
+import BandCommitee from "../assets/BandCommitee.jpg";
+
+import Padura from "../assets/Padura.jpeg";
+import FusionEventBand from "../assets/FusionEventBand.jpg";
+import MICphoto from "../assets/Nipuni.jpg";
+import Band_President from "../assets/BandPresident.jpg";
 
 import {
   Box,
@@ -24,156 +25,160 @@ import {
 
 
 
-const RE_Club = () => {
+const Frequency_Club = () => {
 
-const handleWhatsAppClick = () => {
+ const handleWhatsAppClick = () => {
     window.open('https://wa.me/YOUR_PHONE_NUMBER', '_blank');
   };
 
   const handleInstagramClick = () => {
-    window.open('https://www.instagram.com/renewable_society_nsbm/', '_blank');
+    window.open('https://www.instagram.com/frequency_band.25/', '_blank');
   };
+
+
 
   return (
     <>
       <Navbar />
 
+     {/* logo , club name and club welcome */}
+
       <Box
-        sx={{
-          py: 10,
-          px: 3,
-          background: "linear-gradient(135deg, #e4eee4, #b3e0b3)",
-          textAlign: "center",
-        }}
-      >
-
-        {/* Logo Center */}
-        <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            mb: 3,
-          }}
-        >
-          <img
-          width="250" 
-            height="250"
-            src={Clublogo}
-            alt="Renewable Energy Society"
-            className="w-10 h-10 object-contain"
-          />
-        </Box>
-
-        {/* Club Name Center */}
-        <Typography
-          sx={{
-            fontSize: {
-              xs: "32px",
-              md: "56px",
-            },
-            fontWeight: 800,
-            color: "#1d2530",
+            py: 10,
+            px: 3,
+            background: "linear-gradient(135deg, #888888, #bcbcbc)",
             textAlign: "center",
-            mb: 3,
           }}
         >
-          RENEWABLE ENERGY <br />
-          SOCIETY OF NSBM
-        </Typography>
-
-        {/* Description */}
-        <Typography
-          sx={{
-            maxWidth: "900px",
-            margin: "0 auto",
-            fontSize: {
-              xs: "16px",
-              md: "22px",
-            },
-            color: "#374151",
-            lineHeight: 1.8,
-            mb: 5,
-          }}
-        >
-          Ready to power the future? ⚡ The Renewable Energy Society is a community of forward-thinkers dedicated to green innovation and sustainability. We unite passionate minds to explore clean technology, drive environmental action, and shape a cleaner planet. Join us, collaborate, and be the spark that lights up tomorrow! 🌱🌍
-        </Typography>
-
-        {/* Buttons */}
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: 3,
-            flexWrap: "wrap",
-          }}
-        >
-
-         {/* Buttons */}
-        <Box
-  sx={{
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 3,
-    flexWrap: "wrap",
-  }}
->
-  {/* WhatsApp */}
-  <button
-    onClick={handleWhatsAppClick}
-    style={{
+  
+          {/* Logo Center */}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              mb: 3,
+            }}
+          >
+            <img
+            width="250" 
+            height="250"
+              src={Clublogo}
+              alt="Robotics and Automation Society"
+              className="w-10 h-10 object-contain"
+            />
+          </Box>
+  
+          {/* Club Name Center */}
+          <Typography
+            sx={{
+              fontSize: {
+                xs: "32px",
+                md: "56px",
+              },
+              fontWeight: 800,
+              color: "#0f1012",
+              textAlign: "center",
+              mb: 3,
+            }}
+          >
+            FREQUENCY BAND <br />
+            OF NSBM
+          </Typography>
+  
+          {/* Description */}
+          <Typography
+            sx={{
+              maxWidth: "900px",
+              margin: "0 auto",
+              fontSize: {
+                xs: "16px",
+                md: "22px",
+              },
+              color: "#32353a",
+              lineHeight: 1.8,
+              mb: 5,
+            }}
+          >
+            Welcome to Frequency, the official music band of the Engineering Faculty! We blend technical precision with artistic passion, giving future engineers a vibrant creative outlet. From acoustic sessions to electrifying campus concerts, our talented student musicians unite the faculty, proving that great minds can engineer unforgettable melodies and harmonies.🎶🎙️
+           </Typography>
+  
+          {/* Buttons */}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 3,
+              flexWrap: "wrap",
+            }}
+          >
+  
+           {/* Buttons */}
+          <Box
+    sx={{
       display: "flex",
+      justifyContent: "center",
       alignItems: "center",
-      gap: "12px",
-      padding: "14px 32px",
-      border: "none",
-      borderRadius: "14px",
-      fontSize: "18px",
-      fontWeight: "600",
-      cursor: "pointer",
-      color: "white",
-      background: "linear-gradient(135deg, #4c6b16, #6fbf4b)",
-      boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-      transition: "0.3s",
+      gap: 3,
+      flexWrap: "wrap",
     }}
   >
-    <FaWhatsapp className="text-2xl" />
-    Join Us!
-  </button>
-
-  {/* Instagram */}
-  <button
-    onClick={handleInstagramClick}
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "12px",
-      padding: "14px 32px",
-      border: "2px solid #4c6b16",
-      borderRadius: "14px",
-      fontSize: "18px",
-      fontWeight: "600",
-      cursor: "pointer",
-      background: "white",
-      color: "#1c1c1c",
-      boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-      transition: "0.3s",
-    }}
-  >
-    Stay Connected
-    <FaInstagram className="text-2xl" />
-  </button>
-</Box>
- </Box>
- </Box>
-
-
+    {/* WhatsApp */}
+    <button
+      onClick={handleWhatsAppClick}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "12px",
+        padding: "14px 32px",
+        border: "none",
+        borderRadius: "14px",
+        fontSize: "18px",
+        fontWeight: "600",
+        cursor: "pointer",
+        color: "white",
+        background: "linear-gradient(135deg, #81848b, #3e3f4b)",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+        transition: "0.3s",
+      }}
+    >
+      <FaWhatsapp className="text-2xl" />
+      Join Us!
+    </button>
+  
+    {/* Instagram */}
+    <button
+      onClick={handleInstagramClick}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "12px",
+        padding: "14px 32px",
+        border: "2px solid #4a4c56",
+        borderRadius: "14px",
+        fontSize: "18px",
+        fontWeight: "600",
+        cursor: "pointer",
+        background: "white",
+        color: "#1c1c1c",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+        transition: "0.3s",
+      }}
+    >
+      Stay Connected
+      <FaInstagram className="text-2xl" />
+    </button>
+  </Box>
+   </Box>
+   </Box>
+      
+ {/* committee photo*/}
 
 <Box  sx={{
           py: 10,
           px: 3,
-          background: "linear-gradient(135deg, #f2f6f2, #e8ece8)",
+          background: "linear-gradient(135deg, #fafafb, #e3e4e5)",
           textAlign: "center",
         }}
         
@@ -190,8 +195,8 @@ const handleWhatsAppClick = () => {
 >
   <Box
     component="img"
-    src={RE_Commitee}
-    alt="Renewable Energy Society Committee 2025/26"
+    src={BandCommitee}
+    alt="Band Committee 2025/26"
     sx={{
       width: "75%",
       borderRadius: "18px",
@@ -215,26 +220,24 @@ const handleWhatsAppClick = () => {
 >
   <div className="flex flex-col items-center justify-center px-8 py-10 md:px-12 text-center">
     <h2 className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-4">
-      The Renewable Energy Society Committee 2025/26
+      Frequency Band Committee 2026/27
     </h2>
     <p className="text-[#525252] text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-      Meet the minds powering our mission! The 2025/26 Renewable Energy Society Committee is a dedicated team of innovators championing sustainability. Together, we spearhead green initiatives, organize impactful events, and inspire our community to embrace a cleaner, brighter future. We are leading the charge for sustainable change! 🌱⚡
-    </p>
+      "The heartbeat of Frequency lies in our passionate committee members. Balancing rigorous engineering studies with a love for the arts, this team works tirelessly behind the scenes. They handle everything from event logistics to audio engineering, ensuring every performance hits the perfect note and brings our faculty together. 🎸⚡"
+       </p>
   </div>
 </Box>
   
 
 </Box>
 
-
-
-
+ {/* vision*/}
 
 <Box
   sx={{
     py: { xs: 8, md: 12 }, // Slightly responsive padding (less on mobile, more on desktop)
     px: 3,
-    background: "linear-gradient(135deg, #b5efb5, #334b33)",
+    background: "linear-gradient(135deg, #bcbcbc, #0e0e0e)",
     textAlign: "center",
   }}
 >
@@ -244,28 +247,29 @@ const handleWhatsAppClick = () => {
       width: { xs: "95%", md: "75%", lg: "60%" }, // Added lg: "60%" so it doesn't get too wide on massive screens
       margin: "0 auto",
       borderRadius: "18px",
-      backgroundColor: "#ceecc4",
+      backgroundColor: "#c4c4c4",
       overflow: "hidden",
       boxShadow: "0 20px 40px rgba(0,0,0,0.2)", // Adds a beautiful floating shadow over the gradient
     }}
   >
     <div className="flex flex-col items-center justify-center px-8 py-10 md:px-14 md:py-16 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#2d4223] mb-5">
-        Renewable Energy Society's Vision
+      <h2 className="fw-bold text-white mb-4 display-6">
+        Bands Vision 
       </h2>
       <p className="text-[#3a4535] text-base font-bold md:text-lg md:leading-relaxed max-w-3xl mx-auto font-medium">
-        To become a leading student society within the Faculty of Engineering that empowers future engineers to promote renewable energy, sustainability, and technological innovation for a greener and more responsible future.  
-      </p>
+       " Vision of the Frequency Band: To be the creative heartbeat of the Faculty of Engineering at NSBM Green University, inspiring students through music that bridges tradition and modernity. The band envisions a vibrant platform where engineering minds unite in rhythm, fostering collaboration, cultural pride, and artistic innovation. By harmonizing diverse talents, Frequency strives to uplift the university community and showcase the power of music as both expression and connection. "
+        </p>
     </div>
   </Box>
 </Box>
 
+ {/* events*/}
 
 <Box
       sx={{
         py: { xs: 8, md: 12 },
-        // A soft, fresh gradient background to complement the green theme
-        background: "linear-gradient(180deg, #f9fafb 0%, #eaf5e4 100%)", 
+        
+        background: "linear-gradient(180deg, #f9fafb 0%, #a4a4a4 100%)", 
       }}
     >
       <Container maxWidth="lg">
@@ -274,7 +278,7 @@ const handleWhatsAppClick = () => {
           sx={{
             fontSize: { xs: "36px", md: "48px" },
             fontWeight: 800,
-            color: "#2d4223", // Matches the Vision section heading
+            color: "#232542", 
             mb: 8,
             textAlign: "center",
             letterSpacing: "-0.5px",
@@ -290,8 +294,9 @@ const handleWhatsAppClick = () => {
           <Grid item xs={12} >
             <Card
               sx={{
-        minWidth: "450px", // Forces the card to stay this exact width
-        maxWidth: "450px",
+        minWidth: "550px", // Forces the card to stay this exact width
+        maxWidth: "550px",
+        height: "100%", 
         borderRadius: "16px",
         boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
         display: "flex",
@@ -303,8 +308,8 @@ const handleWhatsAppClick = () => {
               {/* IMAGE */}
               <Box
                 component="img"
-                src={Badge_Ceremony}
-                alt="Badging Ceremony"
+                src={Padura}
+                alt="TracerX robot"
                 sx={{
                   width: "100%",
                   height: 280, // Reduced from 420 for a better card aspect ratio
@@ -322,18 +327,20 @@ const handleWhatsAppClick = () => {
                 }}
               >
                 <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
-                  Badging Ceremony 2026
+                  පැදුර
                 </Typography>
 
                 <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
-                  The Renewable Energy Society successfully held its Badging Ceremony in collaboration with the Robotics and Automation Society on 15th May 2026.
-                </Typography>
+                  
+                  Where nostalgia meets rhythm. This is a journey back in time🎷. An enchanting unplugged cultural evening that celebrates the richness of Sri Lankan heritage. Set in an intimate atmosphere adorned with traditional woven mats, Padura brings together acoustic melodies and communal storytelling to create a heartfelt experience. 
+                  
+                  </Typography>
 
                 <Button
                   variant="contained"
                   fullWidth
                   sx={{
-                    backgroundColor: "#4c6b16",
+                    backgroundColor: "#505152",
                     color: "#fff",
                     borderRadius: "12px",
                     py: 1.5,
@@ -342,8 +349,8 @@ const handleWhatsAppClick = () => {
                     textTransform: "none", // Removes the default ALL CAPS from MUI buttons
                     boxShadow: "none",
                     "&:hover": {
-                      backgroundColor: "#3d5712",
-                      boxShadow: "0 6px 15px rgba(76, 107, 22, 0.3)",
+                      backgroundColor: "#585858",
+                      boxShadow: "0 6px 15px rgba(71, 71, 71, 0.3)",
                     },
                   }}
                 >
@@ -353,12 +360,15 @@ const handleWhatsAppClick = () => {
             </Card>
           </Grid>
 
-          {/* CARD 02 */}
+         
+             
+
           <Grid item xs={12} >
             <Card
               sx={{
-        minWidth: "450px", // Forces the card to stay this exact width
-        maxWidth: "450px",
+        minWidth: "550px", // Forces the card to stay this exact width
+        maxWidth: "550px",
+        height: "100%",
         borderRadius: "16px",
         boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
         display: "flex",
@@ -369,8 +379,8 @@ const handleWhatsAppClick = () => {
             >
               <Box
                 component="img"
-                src={WAGSARA}
-                alt="WAGSARA 2025"
+                src={FusionEventBand}
+                alt="FusionEventBand)"
                 sx={{
                   width: "100%",
                   height: 280,
@@ -387,18 +397,20 @@ const handleWhatsAppClick = () => {
                 }}
               >
                 <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
-                  WAGSARA 2025
+                 Fusion 2025
                 </Typography>
 
                 <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
-                  The Renewable Energy Society successfully organized WAGSARA 2025, bringing together brilliant minds to discuss the future of sustainable technology.
-                </Typography>
+                  
+                  A Signature Experience: Hosted by the Frequency Band of the Faculty of Engineering at NSBM Green University, Fusion is a vibrant cultural showcase where tradition meets modern artistry. By blending Sri Lankan rhythms with contemporary sounds, the event creates an electrifying atmosphere that celebrates creativity, diversity, and innovation. 
+                  
+                  </Typography>
 
                 <Button
                   variant="contained"
                   fullWidth
                   sx={{
-                    backgroundColor: "#4c6b16",
+                    backgroundColor: "#535354",
                     color: "#fff",
                     borderRadius: "12px",
                     py: 1.5,
@@ -407,8 +419,8 @@ const handleWhatsAppClick = () => {
                     textTransform: "none",
                     boxShadow: "none",
                     "&:hover": {
-                      backgroundColor: "#3d5712",
-                      boxShadow: "0 6px 15px rgba(76, 107, 22, 0.3)",
+                      backgroundColor: "#535353",
+                      boxShadow: "0 6px 15px rgba(90, 90, 92, 0.3)",
                     },
                   }}
                 >
@@ -422,6 +434,8 @@ const handleWhatsAppClick = () => {
       </Container>
     </Box>
 
+
+ {/* Note*/}
 
 <Box sx={{ py: { xs: 8, md: 12 }, backgroundColor: "#ffffff" }}>
   <Container maxWidth="lg">
@@ -483,25 +497,25 @@ const handleWhatsAppClick = () => {
             mb: 1,
           }}
         >
-          ENG. PRABHATH BUDDIKA
+          Ms. Nipuni Fernando
         </Typography>
 
         <Typography
           sx={{
-            color: "#4c6b16",
+            color: "#4d4d4c",
             fontSize: "15px",
             fontWeight: 600,
             mb: 2,
           }}
         >
-          Master in Charge, Renewable Energy Society
+          Master in Charge, Frequency Band 
         </Typography>
 
         <Box
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4c6b16",
+            backgroundColor: "#575853",
             mb: 4,
             borderRadius: "2px",
           }}
@@ -509,7 +523,7 @@ const handleWhatsAppClick = () => {
 
         <Typography
           sx={{
-            color: "#64748b",
+            color: "#515151",
             lineHeight: 1.9,
             fontSize: "16px",
             textAlign: "justify",
@@ -531,7 +545,7 @@ const handleWhatsAppClick = () => {
     <Box sx={{ mt: { xs: 10, md: 16 }, mb: 6 }}>
       <Typography
         sx={{
-          color: "#0f172a",
+          color: "#17181a",
           fontSize: { xs: "36px", md: "46px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
@@ -547,7 +561,7 @@ const handleWhatsAppClick = () => {
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
           component="img"
-          src={REClub_President}
+          src={Band_President}
           alt="President"
           sx={{
             width: "100%",
@@ -564,30 +578,30 @@ const handleWhatsAppClick = () => {
         <Typography
           sx={{
             fontSize: { xs: "28px", md: "32px" },
-            color: "#1e293b",
+            color: "#1e1e1f",
             fontFamily: "Georgia, serif",
             mb: 1,
           }}
         >
-          Mr. Chamika 123456
+          Mr. Sandil Dissanayake 
         </Typography>
 
         <Typography
           sx={{
-            color: "#4c6b16",
+            color: "#474747",
             fontSize: "15px",
             fontWeight: 600,
             mb: 2,
           }}
         >
-          President, Renewable Energy Society
+          President, Frequency Band 
         </Typography>
 
         <Box
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4c6b16",
+            backgroundColor: "#4f4d4d",
             mb: 4,
             borderRadius: "2px",
           }}
@@ -595,13 +609,20 @@ const handleWhatsAppClick = () => {
 
         <Typography
           sx={{
-            color: "#64748b",
+            color: "#434141",
             lineHeight: 1.9,
             fontSize: "16px",
             textAlign: "justify",
           }}
         >
-          As the President of the Renewable Energy Society of the Faculty of Engineering, NSBM Green University, is a great honour to lead a team of passionate engineering undergraduates to advance renewable energy, sustainability and innovation. With the inspiration from NSBM's green university environment, our society strives to provide meaningful opportunities for students to build technical knowledge, leadership, teamwork and awareness through events, projects and collaborations. I sincerely appreciate the commitment of our newly appointed committee members and hope to collaborate with them to build an active and impactful Renewable Energy Society in the Faculty of Engineering.</Typography>
+        “Frequency”, the official music band of the Faculty of Engineering, is a platform where engineering students who are passionate about music can perform and showcase their talents and skills.
+As a band, we represent the spirit of our faculty through musical performances and events. Our band is committed to enhancing the university experience by contributing to orientations, open days, and other faculty events.
+We encourage our band members to develop teamwork, musical abilities, and positive personal qualities while working together as a united team.
+
+As the President of the Faculty of Engineering Music Band, I am proud to lead a group of talented musicians who continuously work hard to success of the band.
+
+        
+         </Typography>
       </Grid>
     </Grid>
 
@@ -611,9 +632,17 @@ const handleWhatsAppClick = () => {
 
 
 
+
+
+
+
+
+
+
+
       <Footer />
     </>
   );
 };
 
-export default RE_Club;
+export default Frequency_Club;

@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Research from "./pages/Research.jsx";
 import RE_Club from "./pages/RE_Club.jsx";
 import Robotics_Club from "./pages/Robotics_Club.jsx";
+import Frequency_Club from "./pages/Frequency_Club.jsx";
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
         <Route
           path="/robotics_club"
           element={<Robotics_Club />}
+        />
+
+        <Route
+          path="/frequency_club"
+          element={<Frequency_Club />}
         />
 
       </Routes>

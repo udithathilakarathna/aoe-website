@@ -30,7 +30,7 @@ const Robotics_Club = () => {
   };
 
   const handleInstagramClick = () => {
-    window.open('https://www.instagram.com/aoensbm/', '_blank');
+    window.open('https://www.instagram.com/roboticssocietynsbm/', '_blank');
   };
 
 
@@ -39,7 +39,7 @@ const Robotics_Club = () => {
   
   <Navbar/>
   
-  
+   {/* logo , club name and club welcome */}
         <Box
           sx={{
             py: 10,
@@ -171,12 +171,12 @@ const Robotics_Club = () => {
    </Box>
 
 
-
+ {/* committee photo*/}
 
 <Box  sx={{
           py: 10,
           px: 3,
-          background: "linear-gradient(135deg, #dae7f8, #e2ebf0)",
+          background: "linear-gradient(135deg, #ffffff, #e2ebf0)",
           textAlign: "center",
         }}
         
@@ -229,7 +229,7 @@ const Robotics_Club = () => {
 
 </Box>
 
-
+ {/* Vision*/}
 
 <Box
   sx={{
@@ -261,7 +261,7 @@ const Robotics_Club = () => {
   </Box>
 </Box>
 
-
+ {/* Events*/}
 
 <Box
       sx={{
@@ -492,6 +492,8 @@ const Robotics_Club = () => {
     </Box>
 
 
+ {/* note*/}
+
 <Box sx={{ py: { xs: 8, md: 12 }, backgroundColor: "#ffffff" }}>
   <Container maxWidth="lg">
 
@@ -557,7 +559,7 @@ const Robotics_Club = () => {
 
         <Typography
           sx={{
-            color: "#4c6b16",
+            color: "#16266b",
             fontSize: "15px",
             fontWeight: 600,
             mb: 2,
@@ -570,7 +572,7 @@ const Robotics_Club = () => {
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4c6b16",
+            backgroundColor: "#16236b",
             mb: 4,
             borderRadius: "2px",
           }}
@@ -643,7 +645,7 @@ const Robotics_Club = () => {
 
         <Typography
           sx={{
-            color: "#4c6b16",
+            color: "#162d6b",
             fontSize: "15px",
             fontWeight: 600,
             mb: 2,
@@ -656,7 +658,7 @@ const Robotics_Club = () => {
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4c6b16",
+            backgroundColor: "#16276b",
             mb: 4,
             borderRadius: "2px",
           }}
