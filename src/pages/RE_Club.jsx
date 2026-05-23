@@ -56,6 +56,8 @@ const handleWhatsAppClick = () => {
           }}
         >
           <img
+          width="250" 
+            height="250"
             src={Clublogo}
             alt="Renewable Energy Society"
             className="w-10 h-10 object-contain"
@@ -204,11 +206,11 @@ const handleWhatsAppClick = () => {
     
    <Box
   sx={{
-    width: { xs: "95%", md: "75%" }, // 95% on mobile, 75% on desktop
-    margin: "0 auto", // Centers the Box horizontally on the page
+    width: { xs: "95%", md: "75%" }, 
+    margin: "0 auto",
     borderRadius: "18px",
-    backgroundColor: "#f9fafb", // Matches Tailwind's bg-gray-50
-    overflow: "hidden", // Keeps everything neat inside the rounded corners
+    backgroundColor: "#f9fafb", 
+    overflow: "hidden", 
   }}
 >
   <div className="flex flex-col items-center justify-center px-8 py-10 md:px-12 text-center">
@@ -257,6 +259,8 @@ const handleWhatsAppClick = () => {
     </div>
   </Box>
 </Box>
+
+
 <Box
       sx={{
         py: { xs: 8, md: 12 },
