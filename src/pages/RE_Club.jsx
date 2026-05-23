@@ -6,9 +6,23 @@ import Footer from "../components/Footer";
 
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Clublogo from "../assets/aoe_logo.png";
-import RE_Commitee from "../assets/RE_Club_Society commitee 2026.jpg";
+import RE_Commitee from "../assets/RE_Club_Society_commitee 2026.jpg";
+import Badge_Ceremony from "../assets/Badge_ceremony_RE.jpg";
+import WAGSARA from "../assets/WAGSARA.png";
+import MICphoto from "../assets/prabath.webp";
+import REClub_President from "../assets/REClub_President.png";
 
-import { Box, Typography } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Grid,
+  Card,
+  CardContent,
+  Button,
+} from "@mui/material";
+
+
 
 const RE_Club = () => {
 
@@ -243,6 +257,354 @@ const handleWhatsAppClick = () => {
     </div>
   </Box>
 </Box>
+<Box
+      sx={{
+        py: { xs: 8, md: 12 },
+        // A soft, fresh gradient background to complement the green theme
+        background: "linear-gradient(180deg, #f9fafb 0%, #eaf5e4 100%)", 
+      }}
+    >
+      <Container maxWidth="lg">
+        {/* TITLE */}
+        <Typography
+          sx={{
+            fontSize: { xs: "36px", md: "48px" },
+            fontWeight: 800,
+            color: "#2d4223", // Matches the Vision section heading
+            mb: 8,
+            textAlign: "center",
+            letterSpacing: "-0.5px",
+          }}
+        >
+          Our Events
+        </Typography>
+
+        {/* alignItems="stretch" ensures both cards are the exact same height */}
+        <Grid container spacing={5} alignItems="stretch">
+          
+          {/* CARD 01 */}
+          <Grid item xs={12} >
+            <Card
+              sx={{
+        minWidth: "450px", // Forces the card to stay this exact width
+        maxWidth: "450px",
+        borderRadius: "16px",
+        boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
+        display: "flex",
+        flexDirection: "column",
+        flexShrink: 0, // Prevents the card from squishing
+        scrollSnapAlign: "center", // Snaps into place when scrolling
+      }}
+            >
+              {/* IMAGE */}
+              <Box
+                component="img"
+                src={Badge_Ceremony}
+                alt="Badging Ceremony"
+                sx={{
+                  width: "100%",
+                  height: 280, // Reduced from 420 for a better card aspect ratio
+                  objectFit: "cover",
+                }}
+              />
+
+              {/* CONTENT */}
+              <CardContent 
+                sx={{ 
+                  p: { xs: 4, md: 5 }, // More breathing room inside the card
+                  display: "flex", 
+                  flexDirection: "column", 
+                  flexGrow: 1 // Pushes the button to the bottom 
+                }}
+              >
+                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                  Badging Ceremony 2026
+                </Typography>
+
+                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                  The Renewable Energy Society successfully held its Badging Ceremony in collaboration with the Robotics and Automation Society on 15th May 2026.
+                </Typography>
+
+                <Button
+                  variant="contained"
+                  fullWidth
+                  sx={{
+                    backgroundColor: "#4c6b16",
+                    color: "#fff",
+                    borderRadius: "12px",
+                    py: 1.5,
+                    fontSize: "16px",
+                    fontWeight: 600,
+                    textTransform: "none", // Removes the default ALL CAPS from MUI buttons
+                    boxShadow: "none",
+                    "&:hover": {
+                      backgroundColor: "#3d5712",
+                      boxShadow: "0 6px 15px rgba(76, 107, 22, 0.3)",
+                    },
+                  }}
+                >
+                  View More
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+
+          {/* CARD 02 */}
+          <Grid item xs={12} >
+            <Card
+              sx={{
+        minWidth: "450px", // Forces the card to stay this exact width
+        maxWidth: "450px",
+        borderRadius: "16px",
+        boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
+        display: "flex",
+        flexDirection: "column",
+        flexShrink: 0, // Prevents the card from squishing
+        scrollSnapAlign: "center", // Snaps into place when scrolling
+      }}
+            >
+              <Box
+                component="img"
+                src={WAGSARA}
+                alt="WAGSARA 2025"
+                sx={{
+                  width: "100%",
+                  height: 280,
+                  objectFit: "cover",
+                }}
+              />
+
+              <CardContent 
+                sx={{ 
+                  p: { xs: 4, md: 5 }, 
+                  display: "flex", 
+                  flexDirection: "column", 
+                  flexGrow: 1 
+                }}
+              >
+                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                  WAGSARA 2025
+                </Typography>
+
+                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                  The Renewable Energy Society successfully organized WAGSARA 2025, bringing together brilliant minds to discuss the future of sustainable technology.
+                </Typography>
+
+                <Button
+                  variant="contained"
+                  fullWidth
+                  sx={{
+                    backgroundColor: "#4c6b16",
+                    color: "#fff",
+                    borderRadius: "12px",
+                    py: 1.5,
+                    fontSize: "16px",
+                    fontWeight: 600,
+                    textTransform: "none",
+                    boxShadow: "none",
+                    "&:hover": {
+                      backgroundColor: "#3d5712",
+                      boxShadow: "0 6px 15px rgba(76, 107, 22, 0.3)",
+                    },
+                  }}
+                >
+                  View More
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+
+        </Grid>
+      </Container>
+    </Box>
+
+
+<Box sx={{ py: { xs: 8, md: 12 }, backgroundColor: "#ffffff" }}>
+  <Container maxWidth="lg">
+
+    {/* ==========================================
+        MIC'S NOTE SECTION
+    ========================================== */}
+    <Box sx={{ mb: 6 }}>
+      <Typography
+        sx={{
+          color: "#4c6b16",
+          fontWeight: 600,
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          fontSize: "14px",
+          mb: 1,
+        }}
+      >
+        Society Leadership
+      </Typography>
+
+      <Typography
+        sx={{
+          color: "#0f172a",
+          fontSize: { xs: "36px", md: "46px" },
+          fontWeight: 700,
+          fontFamily: "Georgia, serif",
+        }}
+      >
+        MIC's Note
+      </Typography>
+    </Box>
+
+    <Grid container spacing={8} alignItems="center">
+
+      {/* IMAGE */}
+      <Grid size={{ xs: 12, md: 4 }}>
+        <Box
+          component="img"
+          src={MICphoto}
+          alt="MIC"
+          sx={{
+            width: "100%",
+            height: { xs: 350, md: 450 },
+            borderRadius: "16px",
+            objectFit: "cover",
+            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+          }}
+        />
+      </Grid>
+
+      {/* TEXT */}
+      <Grid size={{ xs: 12, md: 8 }}>
+        <Typography
+          sx={{
+            fontSize: { xs: "28px", md: "32px" },
+            color: "#1e293b",
+            fontFamily: "Georgia, serif",
+            mb: 1,
+          }}
+        >
+          ENG. PRABHATH BUDDIKA
+        </Typography>
+
+        <Typography
+          sx={{
+            color: "#4c6b16",
+            fontSize: "15px",
+            fontWeight: 600,
+            mb: 2,
+          }}
+        >
+          Master in Charge, Renewable Energy Society
+        </Typography>
+
+        <Box
+          sx={{
+            width: "40px",
+            height: "3px",
+            backgroundColor: "#4c6b16",
+            mb: 4,
+            borderRadius: "2px",
+          }}
+        />
+
+        <Typography
+          sx={{
+            color: "#64748b",
+            lineHeight: 1.9,
+            fontSize: "16px",
+            textAlign: "justify",
+          }}
+        >
+          Today, the world stands at a critical juncture. The realities of climate change and environmental degradation are no longer distant threats, making the transition to renewable and sustainable energy our most urgent global priority.
+
+          <br /><br />
+
+          Over the past year, the Renewable Energy Society has been a beacon of innovation and awareness. I have watched our students dedicate their time to researching alternative energy sources, organizing awareness campaigns, and bringing theoretical science into practical reality.
+        </Typography>
+      </Grid>
+    </Grid>
+
+    {/* ==========================================
+        PRESIDENT'S NOTE SECTION
+    ========================================== */}
+
+    <Box sx={{ mt: { xs: 10, md: 16 }, mb: 6 }}>
+      <Typography
+        sx={{
+          color: "#0f172a",
+          fontSize: { xs: "36px", md: "46px" },
+          fontWeight: 700,
+          fontFamily: "Georgia, serif",
+        }}
+      >
+        President's Note
+      </Typography>
+    </Box>
+
+    <Grid container spacing={8} alignItems="center">
+
+      {/* IMAGE */}
+      <Grid size={{ xs: 12, md: 4 }}>
+        <Box
+          component="img"
+          src={REClub_President}
+          alt="President"
+          sx={{
+            width: "100%",
+            height: { xs: 350, md: 450 },
+            borderRadius: "16px",
+            objectFit: "cover",
+            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+          }}
+        />
+      </Grid>
+
+      {/* TEXT */}
+      <Grid size={{ xs: 12, md: 8 }}>
+        <Typography
+          sx={{
+            fontSize: { xs: "28px", md: "32px" },
+            color: "#1e293b",
+            fontFamily: "Georgia, serif",
+            mb: 1,
+          }}
+        >
+          Mr. Chamika 123456
+        </Typography>
+
+        <Typography
+          sx={{
+            color: "#4c6b16",
+            fontSize: "15px",
+            fontWeight: 600,
+            mb: 2,
+          }}
+        >
+          President, Renewable Energy Society
+        </Typography>
+
+        <Box
+          sx={{
+            width: "40px",
+            height: "3px",
+            backgroundColor: "#4c6b16",
+            mb: 4,
+            borderRadius: "2px",
+          }}
+        />
+
+        <Typography
+          sx={{
+            color: "#64748b",
+            lineHeight: 1.9,
+            fontSize: "16px",
+            textAlign: "justify",
+          }}
+        >
+          As the President of the Renewable Energy Society of the Faculty of Engineering, NSBM Green University, is a great honour to lead a team of passionate engineering undergraduates to advance renewable energy, sustainability and innovation. With the inspiration from NSBM's green university environment, our society strives to provide meaningful opportunities for students to build technical knowledge, leadership, teamwork and awareness through events, projects and collaborations. I sincerely appreciate the commitment of our newly appointed committee members and hope to collaborate with them to build an active and impactful Renewable Energy Society in the Faculty of Engineering.</Typography>
+      </Grid>
+    </Grid>
+
+  </Container>
+</Box>
+
+
 
 
       <Footer />
