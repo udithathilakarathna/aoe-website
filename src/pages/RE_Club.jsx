@@ -38,10 +38,16 @@ const handleWhatsAppClick = () => {
     <>
       <Navbar />
 
+{/*logo*/}
       <Box
         sx={{
           py: 10,
           px: 3,
+            height: {
+              xs: "300px",
+              md: "500px",
+              lg: "700px",
+            },
           background: "linear-gradient(135deg, #e4eee4, #b3e0b3)",
           textAlign: "center",
         }}
@@ -56,8 +62,8 @@ const handleWhatsAppClick = () => {
           }}
         >
           <img
-          width="250" 
-            height="250"
+          width="150" 
+            height="150"
             src={Clublogo}
             alt="Renewable Energy Society"
             className="w-10 h-10 object-contain"
@@ -68,9 +74,9 @@ const handleWhatsAppClick = () => {
         <Typography
           sx={{
             fontSize: {
-              xs: "32px",
-              md: "56px",
-            },
+                xs: "28px",
+                md: "38px",
+              },
             fontWeight: 800,
             color: "#1d2530",
             textAlign: "center",
@@ -87,15 +93,15 @@ const handleWhatsAppClick = () => {
             maxWidth: "900px",
             margin: "0 auto",
             fontSize: {
-              xs: "16px",
-              md: "22px",
+              xs: "12px",
+              md: "16px",
             },
             color: "#374151",
             lineHeight: 1.8,
             mb: 5,
           }}
         >
-          Ready to power the future? ⚡ The Renewable Energy Society is a community of forward-thinkers dedicated to green innovation and sustainability. We unite passionate minds to explore clean technology, drive environmental action, and shape a cleaner planet. Join us, collaborate, and be the spark that lights up tomorrow! 🌱🌍
+          Ready to power the future? The Renewable Energy Society is a community of forward-thinkers dedicated to green innovation and sustainability. We unite passionate minds to explore clean technology, drive environmental action, and shape a cleaner planet. Join us, collaborate, and be the spark that lights up tomorrow!
         </Typography>
 
         {/* Buttons */}
@@ -169,7 +175,7 @@ const handleWhatsAppClick = () => {
  </Box>
 
 
-
+{/*photo*/}
 <Box  sx={{
           py: 10,
           px: 3,
@@ -193,11 +199,11 @@ const handleWhatsAppClick = () => {
     src={RE_Commitee}
     alt="Renewable Energy Society Committee 2025/26"
     sx={{
-      width: "75%",
+      width: "60%",
       borderRadius: "18px",
       height: {
-        xs: 350,
-        md: 600,
+        xs: 200,
+        md: 500,
       },
       objectFit: "cover",
     }}
@@ -206,7 +212,7 @@ const handleWhatsAppClick = () => {
     
    <Box
   sx={{
-    width: { xs: "95%", md: "75%" }, 
+    width: { xs: "95%", md: "85%" }, 
     margin: "0 auto",
     borderRadius: "18px",
     backgroundColor: "#f9fafb", 
@@ -218,7 +224,7 @@ const handleWhatsAppClick = () => {
       The Renewable Energy Society Committee 2025/26
     </h2>
     <p className="text-[#525252] text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-      Meet the minds powering our mission! The 2025/26 Renewable Energy Society Committee is a dedicated team of innovators championing sustainability. Together, we spearhead green initiatives, organize impactful events, and inspire our community to embrace a cleaner, brighter future. We are leading the charge for sustainable change! 🌱⚡
+      Meet the minds powering our mission! The 2025/26 Renewable Energy Society Committee is a dedicated team of innovators championing sustainability. Together, we spearhead green initiatives, organize impactful events, and inspire our community to embrace a cleaner, brighter future. We are leading the charge for sustainable change! 
     </p>
   </div>
 </Box>
@@ -232,7 +238,7 @@ const handleWhatsAppClick = () => {
 
 <Box
   sx={{
-    py: { xs: 8, md: 12 }, // Slightly responsive padding (less on mobile, more on desktop)
+    py: { xs: 3, md: 6 }, // Slightly responsive padding (less on mobile, more on desktop)
     px: 3,
     background: "linear-gradient(135deg, #b5efb5, #334b33)",
     textAlign: "center",
@@ -422,21 +428,22 @@ const handleWhatsAppClick = () => {
       </Container>
     </Box>
 
-
-<Box sx={{ py: { xs: 8, md: 12 }, backgroundColor: "#ffffff" }}>
+{/*note*/}
+<Box sx={{ py: { xs: 2, md: 4 }, backgroundColor: "#ffffff" }}>
   <Container maxWidth="lg">
 
-    {/* ==========================================
+    {/* =========================
         MIC'S NOTE SECTION
-    ========================================== */}
-    <Box sx={{ mb: 6 }}>
+    ========================= */}
+
+    <Box sx={{ mb: 5 }}>
       <Typography
         sx={{
           color: "#16306b",
           fontWeight: 600,
           letterSpacing: "2px",
           textTransform: "uppercase",
-          fontSize: "14px",
+          fontSize: "13px",
           mb: 1,
         }}
       >
@@ -446,7 +453,7 @@ const handleWhatsAppClick = () => {
       <Typography
         sx={{
           color: "#0f2a14",
-          fontSize: { xs: "36px", md: "46px" },
+          fontSize: { xs: "20px", md: "30px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
         }}
@@ -455,54 +462,66 @@ const handleWhatsAppClick = () => {
       </Typography>
     </Box>
 
-    <Grid container spacing={8} alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+    >
 
       {/* IMAGE */}
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
-          component="img"
-          src={MICphoto}
-          alt="MIC"
           sx={{
-            width: "100%",
-            height: { xs: 350, md: 450 },
-            borderRadius: "16px",
-            objectFit: "cover",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            display: "flex",
+            justifyContent: { xs: "center", md: "flex-start" },
+            mb: { xs: 3, md: 0 },
           }}
-        />
+        >
+          <Box
+            component="img"
+            src={MICphoto}
+            alt="MIC"
+            sx={{
+              width: { xs: "85%", md: "75%" },
+              height: { xs: 220, md: 300 },
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            }}
+          />
+        </Box>
       </Grid>
 
       {/* TEXT */}
       <Grid size={{ xs: 12, md: 8 }}>
         <Typography
           sx={{
-            fontSize: { xs: "28px", md: "32px" },
+            fontSize: { xs: "22px", md: "28px" },
             color: "#1e293b",
             fontFamily: "Georgia, serif",
             mb: 1,
           }}
         >
-          ENG. PRABHATH BUDDIKA
+          ENG. Prabath Buddika
         </Typography>
 
         <Typography
           sx={{
-            color: "#4c6b16",
-            fontSize: "15px",
+            color: "#16266b",
+            fontSize: "14px",
             fontWeight: 600,
             mb: 2,
           }}
         >
-          Master in Charge, Renewable Energy Society
+          Master in Charge, Renewable Energy Society 
         </Typography>
 
         <Box
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4c6b16",
-            mb: 4,
+            backgroundColor: "#16236b",
+            mb: 3,
             borderRadius: "2px",
           }}
         />
@@ -510,8 +529,8 @@ const handleWhatsAppClick = () => {
         <Typography
           sx={{
             color: "#64748b",
-            lineHeight: 1.9,
-            fontSize: "16px",
+            lineHeight: 1.8,
+            fontSize: "14px",
             textAlign: "justify",
           }}
         >
@@ -524,15 +543,15 @@ const handleWhatsAppClick = () => {
       </Grid>
     </Grid>
 
-    {/* ==========================================
-        PRESIDENT'S NOTE SECTION
-    ========================================== */}
+    {/* =========================
+        PRESIDENT'S NOTE
+    ========================= */}
 
-    <Box sx={{ mt: { xs: 10, md: 16 }, mb: 6 }}>
+    <Box sx={{ mt: { xs: 2, md: 4 }, mb: 5 }}>
       <Typography
         sx={{
           color: "#0f172a",
-          fontSize: { xs: "36px", md: "46px" },
+          fontSize: { xs: "20px", md: "30px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
         }}
@@ -541,54 +560,66 @@ const handleWhatsAppClick = () => {
       </Typography>
     </Box>
 
-    <Grid container spacing={8} alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+    >
 
       {/* IMAGE */}
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
-          component="img"
-          src={REClub_President}
-          alt="President"
           sx={{
-            width: "100%",
-            height: { xs: 350, md: 450 },
-            borderRadius: "16px",
-            objectFit: "cover",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            display: "flex",
+            justifyContent: { xs: "center", md: "flex-start" },
+            mb: { xs: 3, md: 0 },
           }}
-        />
+        >
+          <Box
+            component="img"
+            src={REClub_President}
+            alt="President"
+            sx={{
+              width: { xs: "85%", md: "75%" },
+              height: { xs: 220, md: 300 },
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            }}
+          />
+        </Box>
       </Grid>
 
       {/* TEXT */}
       <Grid size={{ xs: 12, md: 8 }}>
         <Typography
           sx={{
-            fontSize: { xs: "28px", md: "32px" },
+            fontSize: { xs: "22px", md: "28px" },
             color: "#1e293b",
             fontFamily: "Georgia, serif",
             mb: 1,
           }}
         >
-          Mr. Chamika 123456
+          Mr. Chamika #####
         </Typography>
 
         <Typography
           sx={{
-            color: "#4c6b16",
-            fontSize: "15px",
+            color: "#162d6b",
+            fontSize: "14px",
             fontWeight: 600,
             mb: 2,
           }}
         >
-          President, Renewable Energy Society
+          President, Renewable Energy Society 
         </Typography>
 
         <Box
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4c6b16",
-            mb: 4,
+            backgroundColor: "#16276b",
+            mb: 3,
             borderRadius: "2px",
           }}
         />
@@ -596,17 +627,21 @@ const handleWhatsAppClick = () => {
         <Typography
           sx={{
             color: "#64748b",
-            lineHeight: 1.9,
-            fontSize: "16px",
+            lineHeight: 1.8,
+            fontSize: "14px",
             textAlign: "justify",
           }}
         >
-          As the President of the Renewable Energy Society of the Faculty of Engineering, NSBM Green University, is a great honour to lead a team of passionate engineering undergraduates to advance renewable energy, sustainability and innovation. With the inspiration from NSBM's green university environment, our society strives to provide meaningful opportunities for students to build technical knowledge, leadership, teamwork and awareness through events, projects and collaborations. I sincerely appreciate the commitment of our newly appointed committee members and hope to collaborate with them to build an active and impactful Renewable Energy Society in the Faculty of Engineering.</Typography>
+          
+          "As the President of the Renewable Energy Society of the Faculty of Engineering, NSBM Green University, is a great honour to lead a team of passionate engineering undergraduates to advance renewable energy, sustainability and innovation. With the inspiration from NSBM's green university environment, our society strives to provide meaningful opportunities for students to build technical knowledge, leadership, teamwork and awareness through events, projects and collaborations. I sincerely appreciate the commitment of our newly appointed committee members and hope to collaborate with them to build an active and impactful Renewable Energy Society in the Faculty of Engineering."
+          
+          </Typography>
       </Grid>
     </Grid>
 
   </Container>
 </Box>
+
 
 
 

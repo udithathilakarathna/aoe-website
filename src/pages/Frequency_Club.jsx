@@ -47,6 +47,11 @@ const Frequency_Club = () => {
           sx={{
             py: 10,
             px: 3,
+             height: {
+              xs: "300px",
+              md: "500px",
+              lg: "700px",
+            },
             background: "linear-gradient(135deg, #888888, #bcbcbc)",
             textAlign: "center",
           }}
@@ -61,8 +66,8 @@ const Frequency_Club = () => {
             }}
           >
             <img
-            width="250" 
-            height="250"
+            width="150" 
+            height="150"
               src={Clublogo}
               alt="Robotics and Automation Society"
               className="w-10 h-10 object-contain"
@@ -73,8 +78,8 @@ const Frequency_Club = () => {
           <Typography
             sx={{
               fontSize: {
-                xs: "32px",
-                md: "56px",
+                xs: "28px",
+                md: "38px",
               },
               fontWeight: 800,
               color: "#0f1012",
@@ -92,15 +97,15 @@ const Frequency_Club = () => {
               maxWidth: "900px",
               margin: "0 auto",
               fontSize: {
-                xs: "16px",
-                md: "22px",
+                xs: "13px",
+                md: "17px",
               },
               color: "#32353a",
               lineHeight: 1.8,
               mb: 5,
             }}
           >
-            Welcome to Frequency, the official music band of the Engineering Faculty! We blend technical precision with artistic passion, giving future engineers a vibrant creative outlet. From acoustic sessions to electrifying campus concerts, our talented student musicians unite the faculty, proving that great minds can engineer unforgettable melodies and harmonies.🎶🎙️
+            Welcome to Frequency, the official music band of the Engineering Faculty! We blend technical precision with artistic passion, giving future engineers a vibrant creative outlet. From acoustic sessions to electrifying campus concerts, our talented student musicians unite the faculty, proving that great minds can engineer unforgettable melodies and harmonies.
            </Typography>
   
           {/* Buttons */}
@@ -198,11 +203,11 @@ const Frequency_Club = () => {
     src={BandCommitee}
     alt="Band Committee 2025/26"
     sx={{
-      width: "75%",
+      width: "60%",
       borderRadius: "18px",
       height: {
-        xs: 350,
-        md: 600,
+        xs: 200,
+        md: 500,
       },
       objectFit: "cover",
     }}
@@ -211,7 +216,7 @@ const Frequency_Club = () => {
     
    <Box
   sx={{
-    width: { xs: "95%", md: "75%" }, 
+    width: { xs: "95%", md: "85%" }, 
     margin: "0 auto",
     borderRadius: "18px",
     backgroundColor: "#f9fafb", 
@@ -223,7 +228,7 @@ const Frequency_Club = () => {
       Frequency Band Committee 2026/27
     </h2>
     <p className="text-[#525252] text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-      "The heartbeat of Frequency lies in our passionate committee members. Balancing rigorous engineering studies with a love for the arts, this team works tirelessly behind the scenes. They handle everything from event logistics to audio engineering, ensuring every performance hits the perfect note and brings our faculty together. 🎸⚡"
+      "The heartbeat of Frequency lies in our passionate committee members. Balancing rigorous engineering studies with a love for the arts, this team works tirelessly behind the scenes. They handle everything from event logistics to audio engineering, ensuring every performance hits the perfect note and brings our faculty together."
        </p>
   </div>
 </Box>
@@ -235,8 +240,9 @@ const Frequency_Club = () => {
 
 <Box
   sx={{
-    py: { xs: 8, md: 12 }, // Slightly responsive padding (less on mobile, more on desktop)
+    py: { xs: 3, md: 6 }, // Slightly responsive padding (less on mobile, more on desktop)
     px: 3,
+    
     background: "linear-gradient(135deg, #bcbcbc, #0e0e0e)",
     textAlign: "center",
   }}
@@ -267,7 +273,7 @@ const Frequency_Club = () => {
 
 <Box
       sx={{
-        py: { xs: 8, md: 12 },
+        py: { xs: 2, md: 4 },
         
         background: "linear-gradient(180deg, #f9fafb 0%, #a4a4a4 100%)", 
       }}
@@ -286,7 +292,7 @@ const Frequency_Club = () => {
         >
           Our Events
         </Typography>
-
+<Box  >
         {/* alignItems="stretch" ensures both cards are the exact same height */}
         <Grid container spacing={5} alignItems="stretch">
           
@@ -294,8 +300,8 @@ const Frequency_Club = () => {
           <Grid item xs={12} >
             <Card
               sx={{
-        minWidth: "550px", // Forces the card to stay this exact width
-        maxWidth: "550px",
+        minWidth: "400px", // Forces the card to stay this exact width
+        maxWidth: "400px",
         height: "100%", 
         borderRadius: "16px",
         boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
@@ -326,11 +332,11 @@ const Frequency_Club = () => {
                   flexGrow: 1 // Pushes the button to the bottom 
                 }}
               >
-                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
                   පැදුර
                 </Typography>
 
-                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                <Typography sx={{ color: "#525252", fontSize: "14px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
                   
                   Where nostalgia meets rhythm. This is a journey back in time🎷. An enchanting unplugged cultural evening that celebrates the richness of Sri Lankan heritage. Set in an intimate atmosphere adorned with traditional woven mats, Padura brings together acoustic melodies and communal storytelling to create a heartfelt experience. 
                   
@@ -366,8 +372,8 @@ const Frequency_Club = () => {
           <Grid item xs={12} >
             <Card
               sx={{
-        minWidth: "550px", // Forces the card to stay this exact width
-        maxWidth: "550px",
+        minWidth: "400px", // Forces the card to stay this exact width
+        maxWidth: "400px",
         height: "100%",
         borderRadius: "16px",
         boxShadow: "0px 4px 20px rgba(0,0,0,0.05)",
@@ -396,11 +402,11 @@ const Frequency_Club = () => {
                   flexGrow: 1 
                 }}
               >
-                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
                  Fusion 2025
                 </Typography>
 
-                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                <Typography sx={{ color: "#525252", fontSize: "14px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
                   
                   A Signature Experience: Hosted by the Frequency Band of the Faculty of Engineering at NSBM Green University, Fusion is a vibrant cultural showcase where tradition meets modern artistry. By blending Sri Lankan rhythms with contemporary sounds, the event creates an electrifying atmosphere that celebrates creativity, diversity, and innovation. 
                   
@@ -431,27 +437,29 @@ const Frequency_Club = () => {
           </Grid>
 
         </Grid>
+      </Box>
       </Container>
     </Box>
 
 
  {/* Note*/}
 
-<Box sx={{ py: { xs: 8, md: 12 }, backgroundColor: "#ffffff" }}>
+<Box sx={{ py: { xs: 2, md: 4 }, backgroundColor: "#ffffff" }}>
   <Container maxWidth="lg">
 
-    {/* ==========================================
+    {/* =========================
         MIC'S NOTE SECTION
-    ========================================== */}
-    <Box sx={{ mb: 6 }}>
+    ========================= */}
+
+    <Box sx={{ mb: 5 }}>
       <Typography
         sx={{
           color: "#16306b",
           fontWeight: 600,
           letterSpacing: "2px",
           textTransform: "uppercase",
-          fontSize: "14px",
-          mb: 1,
+          fontSize: "13px",
+          
         }}
       >
         Society Leadership
@@ -460,7 +468,7 @@ const Frequency_Club = () => {
       <Typography
         sx={{
           color: "#0f2a14",
-          fontSize: { xs: "36px", md: "46px" },
+          fontSize: { xs: "20px", md: "30px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
         }}
@@ -469,84 +477,93 @@ const Frequency_Club = () => {
       </Typography>
     </Box>
 
-    <Grid container spacing={8} alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+    >
 
       {/* IMAGE */}
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
-          component="img"
-          src={MICphoto}
-          alt="MIC"
           sx={{
-            width: "100%",
-            height: { xs: 350, md: 450 },
-            borderRadius: "16px",
-            objectFit: "cover",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            display: "flex",
+            justifyContent: { xs: "center", md: "flex-start" },
+            mb: { xs: 3, md: 0 },
           }}
-        />
+        >
+          <Box
+            component="img"
+            src={MICphoto}
+            alt="MIC"
+            sx={{
+              width: { xs: "85%", md: "75%" },
+              height: { xs: 220, md: 300 },
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            }}
+          />
+        </Box>
       </Grid>
 
       {/* TEXT */}
       <Grid size={{ xs: 12, md: 8 }}>
         <Typography
           sx={{
-            fontSize: { xs: "28px", md: "32px" },
+            fontSize: { xs: "22px", md: "28px" },
             color: "#1e293b",
             fontFamily: "Georgia, serif",
             mb: 1,
           }}
         >
-          Ms. Nipuni Fernando
+          Ms.Nipuni Fernando
         </Typography>
 
         <Typography
           sx={{
-            color: "#4d4d4c",
-            fontSize: "15px",
+            color: "#16266b",
+            fontSize: "14px",
             fontWeight: 600,
             mb: 2,
           }}
         >
-          Master in Charge, Frequency Band 
+          Master in Charge, Frequency Band
         </Typography>
 
         <Box
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#575853",
-            mb: 4,
+            backgroundColor: "#16236b",
+            mb: 3,
             borderRadius: "2px",
           }}
         />
 
         <Typography
           sx={{
-            color: "#515151",
-            lineHeight: 1.9,
-            fontSize: "16px",
+            color: "#64748b",
+            lineHeight: 1.8,
+            fontSize: "14px",
             textAlign: "justify",
           }}
         >
           Today, the world stands at a critical juncture. The realities of climate change and environmental degradation are no longer distant threats, making the transition to renewable and sustainable energy our most urgent global priority.
 
-          <br /><br />
-
-          Over the past year, the Renewable Energy Society has been a beacon of innovation and awareness. I have watched our students dedicate their time to researching alternative energy sources, organizing awareness campaigns, and bringing theoretical science into practical reality.
-        </Typography>
+         </Typography>
       </Grid>
     </Grid>
 
-    {/* ==========================================
-        PRESIDENT'S NOTE SECTION
-    ========================================== */}
+    {/* =========================
+        PRESIDENT'S NOTE
+    ========================= */}
 
-    <Box sx={{ mt: { xs: 10, md: 16 }, mb: 6 }}>
+    <Box sx={{ mt: { xs: 2, md: 4 }, mb: 5 }}>
       <Typography
         sx={{
-          color: "#17181a",
-          fontSize: { xs: "36px", md: "46px" },
+          color: "#0f172a",
+          fontSize: { xs: "20px", md: "30px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
         }}
@@ -555,74 +572,85 @@ const Frequency_Club = () => {
       </Typography>
     </Box>
 
-    <Grid container spacing={8} alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+    >
 
       {/* IMAGE */}
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
-          component="img"
-          src={Band_President}
-          alt="President"
           sx={{
-            width: "100%",
-            height: { xs: 350, md: 450 },
-            borderRadius: "16px",
-            objectFit: "cover",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            display: "flex",
+            justifyContent: { xs: "center", md: "flex-start" },
+            mb: { xs: 3, md: 0 },
           }}
-        />
+        >
+          <Box
+            component="img"
+            src={Band_President}
+            alt="President"
+            sx={{
+              width: { xs: "85%", md: "75%" },
+              height: { xs: 220, md: 300 },
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            }}
+          />
+        </Box>
       </Grid>
 
       {/* TEXT */}
       <Grid size={{ xs: 12, md: 8 }}>
         <Typography
           sx={{
-            fontSize: { xs: "28px", md: "32px" },
-            color: "#1e1e1f",
+            fontSize: { xs: "22px", md: "28px" },
+            color: "#1e293b",
             fontFamily: "Georgia, serif",
             mb: 1,
           }}
         >
-          Mr. Sandil Dissanayake 
+          Mr. Sandil Dissanayake
         </Typography>
 
         <Typography
           sx={{
-            color: "#474747",
-            fontSize: "15px",
+            color: "#162d6b",
+            fontSize: "14px",
             fontWeight: 600,
             mb: 2,
           }}
         >
-          President, Frequency Band 
+          President, Frequency Band
         </Typography>
 
         <Box
           sx={{
             width: "40px",
             height: "3px",
-            backgroundColor: "#4f4d4d",
-            mb: 4,
+            backgroundColor: "#16276b",
+            mb: 3,
             borderRadius: "2px",
           }}
         />
 
         <Typography
           sx={{
-            color: "#434141",
-            lineHeight: 1.9,
-            fontSize: "16px",
+            color: "#64748b",
+            lineHeight: 1.8,
+            fontSize: "14px",
             textAlign: "justify",
           }}
         >
-        “Frequency”, the official music band of the Faculty of Engineering, is a platform where engineering students who are passionate about music can perform and showcase their talents and skills.
+          “Frequency”, the official music band of the Faculty of Engineering, is a platform where engineering students who are passionate about music can perform and showcase their talents and skills.
 As a band, we represent the spirit of our faculty through musical performances and events. Our band is committed to enhancing the university experience by contributing to orientations, open days, and other faculty events.
 We encourage our band members to develop teamwork, musical abilities, and positive personal qualities while working together as a united team.
 
 As the President of the Faculty of Engineering Music Band, I am proud to lead a group of talented musicians who continuously work hard to success of the band.
 
-        
-         </Typography>
+           </Typography>
       </Grid>
     </Grid>
 

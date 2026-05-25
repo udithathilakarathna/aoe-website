@@ -42,8 +42,14 @@ const Robotics_Club = () => {
    {/* logo , club name and club welcome */}
         <Box
           sx={{
+            
             py: 10,
             px: 3,
+                    height: {
+              xs: "300px",
+              md: "500px",
+              lg: "700px",
+            },
             background: "linear-gradient(135deg, #bcd8ea, #93a2cf)",
             textAlign: "center",
           }}
@@ -58,8 +64,8 @@ const Robotics_Club = () => {
             }}
           >
             <img
-            width="250" 
-            height="250"
+            width="150" 
+            height="150"
               src={Clublogo}
               alt="Robotics and Automation Society"
               className="w-10 h-10 object-contain"
@@ -70,8 +76,8 @@ const Robotics_Club = () => {
           <Typography
             sx={{
               fontSize: {
-                xs: "32px",
-                md: "56px",
+                xs: "28px",
+                md: "38px",
               },
               fontWeight: 800,
               color: "#1d2530",
@@ -89,15 +95,15 @@ const Robotics_Club = () => {
               maxWidth: "900px",
               margin: "0 auto",
               fontSize: {
-                xs: "16px",
-                md: "22px",
+                xs: "12px",
+                md: "16px",
               },
               color: "#374151",
               lineHeight: 1.8,
               mb: 5,
             }}
           >
-            Welcome to the Robotics and Automation Club! We are a community of young innovators passionate about building the future.  Through exciting projects, our members learn mechanical design, programming, and artificial intelligence. Join us to explore smart technology, build working robots, and develop the skills needed to shape our world today. 🌍 🤖
+            " Welcome to the Robotics and Automation Club! We are a community of young innovators passionate about building the future.  Through exciting projects, our members learn mechanical design, programming, and artificial intelligence. Join us to explore smart technology, build working robots, and develop the skills needed to shape our world today. "
             </Typography>
   
           {/* Buttons */}
@@ -176,6 +182,7 @@ const Robotics_Club = () => {
 <Box  sx={{
           py: 10,
           px: 3,
+          
           background: "linear-gradient(135deg, #ffffff, #e2ebf0)",
           textAlign: "center",
         }}
@@ -196,11 +203,11 @@ const Robotics_Club = () => {
     src={RoboticsClubCommitee}
     alt="Robotics and Automation Society Committee 2025/26"
     sx={{
-      width: "75%",
+      width: "60%",
       borderRadius: "18px",
       height: {
-        xs: 350,
-        md: 600,
+        xs: 200,
+        md: 500,
       },
       objectFit: "cover",
     }}
@@ -209,20 +216,23 @@ const Robotics_Club = () => {
     
    <Box
   sx={{
-    width: { xs: "95%", md: "75%" }, 
+    width: { xs: "95%", md: "85%" },
     margin: "0 auto",
     borderRadius: "18px",
-    backgroundColor: "#f9fafb", 
-    overflow: "hidden", 
+    backgroundColor: "#f9fafb",
+    overflow: "hidden",
   }}
 >
   <div className="flex flex-col items-center justify-center px-8 py-10 md:px-12 text-center">
-    <h2 className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-4">
+    
+    <h2 className="text-xs md:text-base font-bold text-[#1a1a1a] mb-3">
       The Robotics and Automation Society Committee 2025/26
     </h2>
-    <p className="text-[#525252] text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-      Meet the minds engineering our mission! The 2025/26 Robotics and Automation Club Committee is a dedicated team of creators championing technological innovation. Together, we build intelligent systems, organize impactful tech events, and inspire our community to embrace a smarter, automated future. We are coding and creating the technology of tomorrow! 🤖⚙️
-      </p>
+
+    <p className="text-[11px] md:text-sm leading-relaxed max-w-3xl mx-auto text-[#525252]">
+      Meet the minds engineering our mission! The 2025/26 Robotics and Automation Club Committee is a dedicated team of creators championing technological innovation. Together, we build intelligent systems, organize impactful tech events, and inspire our community to embrace a smarter, automated future. We are coding and creating the technology of tomorrow!
+    </p>
+
   </div>
 </Box>
   
@@ -233,8 +243,9 @@ const Robotics_Club = () => {
 
 <Box
   sx={{
-    py: { xs: 8, md: 12 }, // Slightly responsive padding (less on mobile, more on desktop)
+    py: { xs: 3, md: 6 }, // Slightly responsive padding (less on mobile, more on desktop)
     px: 3,
+    
     background: "linear-gradient(135deg, #b5ccef, #33394b)",
     textAlign: "center",
   }}
@@ -251,7 +262,7 @@ const Robotics_Club = () => {
     }}
   >
     <div className="flex flex-col items-center justify-center px-8 py-10 md:px-14 md:py-16 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-[#2d4223] mb-5">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#2d4223] mb-5">
         Robotics and Automation Society's Vision
       </h2>
       <p className="text-[#3a4535] text-base font-bold md:text-lg md:leading-relaxed max-w-3xl mx-auto font-medium">
@@ -265,7 +276,7 @@ const Robotics_Club = () => {
 
 <Box
       sx={{
-        py: { xs: 8, md: 12 },
+        py: { xs: 2, md: 6 },
         
         background: "linear-gradient(180deg, #f9fafb 0%, #e4ebf5 100%)", 
       }}
@@ -324,11 +335,11 @@ const Robotics_Club = () => {
                   flexGrow: 1 // Pushes the button to the bottom 
                 }}
               >
-                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
                   Tracer X – Line Tracing Robot Competition
                 </Typography>
 
-                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                <Typography sx={{ color: "#525252", fontSize: "15px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
                   Organized by the Robotics and Automation Society, Tracer X challenges participants to design autonomous robots capable of accurately following complex paths with speed and precision.
                   </Typography>
 
@@ -390,11 +401,11 @@ const Robotics_Club = () => {
                   flexGrow: 1 
                 }}
               >
-                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
                  Arduino workshop
                 </Typography>
 
-                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                <Typography sx={{ color: "#525252", fontSize: "15px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
                   The Arduino Workshop was designed to introduce students to the fundamentals of microcontrollers, electronics, and programming using the Arduino platform. The session provided hands-on experience in circuit building, sensor interfacing, and basic automation projects, helping participants develop practical skills in embedded systems and robotics.</Typography>
 
                 <Button
@@ -455,11 +466,11 @@ const Robotics_Club = () => {
                   flexGrow: 1 
                 }}
               >
-                <Typography sx={{ fontSize: "24px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
+                <Typography sx={{ fontSize: "20px", fontWeight: 700, color: "#1a1a1a", mb: 2 }}>
                  Open Hangar Workshop – UAVs & AUVs (upcoming)
                 </Typography>
 
-                <Typography sx={{ color: "#525252", fontSize: "16px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
+                <Typography sx={{ color: "#525252", fontSize: "15px", lineHeight: 1.8, mb: 4, flexGrow: 1 }}>
                   An interactive workshop focused on Unmanned Aerial Vehicles (UAVs) and Autonomous Underwater Vehicles (AUVs), providing students with exposure to modern autonomous technologies, design concepts, control systems, and real-world applications in robotics and automation.
                    </Typography>
 
@@ -493,21 +504,21 @@ const Robotics_Club = () => {
 
 
  {/* note*/}
-
-<Box sx={{ py: { xs: 8, md: 12 }, backgroundColor: "#ffffff" }}>
+<Box sx={{ py: { xs: 2, md: 4 }, backgroundColor: "#ffffff" }}>
   <Container maxWidth="lg">
 
-    {/* ==========================================
+    {/* =========================
         MIC'S NOTE SECTION
-    ========================================== */}
-    <Box sx={{ mb: 6 }}>
+    ========================= */}
+
+    <Box sx={{ mb: 5 }}>
       <Typography
         sx={{
           color: "#16306b",
           fontWeight: 600,
           letterSpacing: "2px",
           textTransform: "uppercase",
-          fontSize: "14px",
+          fontSize: "13px",
           mb: 1,
         }}
       >
@@ -517,7 +528,7 @@ const Robotics_Club = () => {
       <Typography
         sx={{
           color: "#0f2a14",
-          fontSize: { xs: "36px", md: "46px" },
+          fontSize: { xs: "20px", md: "30px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
         }}
@@ -526,29 +537,41 @@ const Robotics_Club = () => {
       </Typography>
     </Box>
 
-    <Grid container spacing={8} alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+    >
 
       {/* IMAGE */}
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
-          component="img"
-          src={MICphoto}
-          alt="MIC"
           sx={{
-            width: "100%",
-            height: { xs: 350, md: 450 },
-            borderRadius: "16px",
-            objectFit: "cover",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            display: "flex",
+            justifyContent: { xs: "center", md: "flex-start" },
+            mb: { xs: 3, md: 0 },
           }}
-        />
+        >
+          <Box
+            component="img"
+            src={MICphoto}
+            alt="MIC"
+            sx={{
+              width: { xs: "85%", md: "75%" },
+              height: { xs: 220, md: 300 },
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            }}
+          />
+        </Box>
       </Grid>
 
       {/* TEXT */}
       <Grid size={{ xs: 12, md: 8 }}>
         <Typography
           sx={{
-            fontSize: { xs: "28px", md: "32px" },
+            fontSize: { xs: "22px", md: "28px" },
             color: "#1e293b",
             fontFamily: "Georgia, serif",
             mb: 1,
@@ -560,7 +583,7 @@ const Robotics_Club = () => {
         <Typography
           sx={{
             color: "#16266b",
-            fontSize: "15px",
+            fontSize: "14px",
             fontWeight: 600,
             mb: 2,
           }}
@@ -573,7 +596,7 @@ const Robotics_Club = () => {
             width: "40px",
             height: "3px",
             backgroundColor: "#16236b",
-            mb: 4,
+            mb: 3,
             borderRadius: "2px",
           }}
         />
@@ -581,8 +604,8 @@ const Robotics_Club = () => {
         <Typography
           sx={{
             color: "#64748b",
-            lineHeight: 1.9,
-            fontSize: "16px",
+            lineHeight: 1.8,
+            fontSize: "14px",
             textAlign: "justify",
           }}
         >
@@ -595,15 +618,15 @@ const Robotics_Club = () => {
       </Grid>
     </Grid>
 
-    {/* ==========================================
-        PRESIDENT'S NOTE SECTION
-    ========================================== */}
+    {/* =========================
+        PRESIDENT'S NOTE
+    ========================= */}
 
-    <Box sx={{ mt: { xs: 10, md: 16 }, mb: 6 }}>
+    <Box sx={{ mt: { xs: 2, md: 4 }, mb: 5 }}>
       <Typography
         sx={{
           color: "#0f172a",
-          fontSize: { xs: "36px", md: "46px" },
+          fontSize: { xs: "20px", md: "30px" },
           fontWeight: 700,
           fontFamily: "Georgia, serif",
         }}
@@ -612,29 +635,41 @@ const Robotics_Club = () => {
       </Typography>
     </Box>
 
-    <Grid container spacing={8} alignItems="center">
+    <Grid
+      container
+      spacing={2}
+      alignItems="center"
+    >
 
       {/* IMAGE */}
       <Grid size={{ xs: 12, md: 4 }}>
         <Box
-          component="img"
-          src={RoboticClub_President}
-          alt="President"
           sx={{
-            width: "100%",
-            height: { xs: 350, md: 450 },
-            borderRadius: "16px",
-            objectFit: "cover",
-            boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            display: "flex",
+            justifyContent: { xs: "center", md: "flex-start" },
+            mb: { xs: 3, md: 0 },
           }}
-        />
+        >
+          <Box
+            component="img"
+            src={RoboticClub_President}
+            alt="President"
+            sx={{
+              width: { xs: "85%", md: "75%" },
+              height: { xs: 220, md: 300 },
+              borderRadius: "16px",
+              objectFit: "cover",
+              boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+            }}
+          />
+        </Box>
       </Grid>
 
       {/* TEXT */}
       <Grid size={{ xs: 12, md: 8 }}>
         <Typography
           sx={{
-            fontSize: { xs: "28px", md: "32px" },
+            fontSize: { xs: "22px", md: "28px" },
             color: "#1e293b",
             fontFamily: "Georgia, serif",
             mb: 1,
@@ -646,7 +681,7 @@ const Robotics_Club = () => {
         <Typography
           sx={{
             color: "#162d6b",
-            fontSize: "15px",
+            fontSize: "14px",
             fontWeight: 600,
             mb: 2,
           }}
@@ -659,7 +694,7 @@ const Robotics_Club = () => {
             width: "40px",
             height: "3px",
             backgroundColor: "#16276b",
-            mb: 4,
+            mb: 3,
             borderRadius: "2px",
           }}
         />
@@ -667,19 +702,18 @@ const Robotics_Club = () => {
         <Typography
           sx={{
             color: "#64748b",
-            lineHeight: 1.9,
-            fontSize: "16px",
+            lineHeight: 1.8,
+            fontSize: "14px",
             textAlign: "justify",
           }}
         >
-         “The future belongs to innovators. Through the Robotics and Automation Society, we strive to build a platform where ideas transform into technology, and passion evolves into innovation.”
-          </Typography>
+          “The future belongs to innovators. Through the Robotics and Automation Society, we strive to build a platform where ideas transform into technology, and passion evolves into innovation.”
+        </Typography>
       </Grid>
     </Grid>
 
   </Container>
 </Box>
-
 
 
 
